@@ -1,0 +1,78 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Clash - Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-wrapper">
+
+        <header>
+            <h1>⚔️ SHADOW CLASH ⚔️</h1>
+            <p>Ultimate 2D Fighting Arena</p>
+        </header>
+
+        <div class="hud">
+            <div class="player-info">
+                <span>PLAYER 1</span>
+                <div class="health-bar">
+                    <div id="player1Health"></div>
+                </div>
+            </div>
+
+            <div id="timer">60</div>
+
+            <div class="player-info player2">
+                <span>PLAYER 2</span>
+                <div class="health-bar">
+                    <div id="player2Health"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arena">
+            <canvas id="gameCanvas" width="1000" height="550"></canvas>
+
+            <div id="startScreen" class="screen">
+                <h2>SHADOW CLASH</h2>
+                <p>Fight your opponent and become the champion!</p>
+                <button id="startButton">START FIGHT</button>
+            </div>
+
+            <div id="gameOverScreen" class="screen hidden">
+                <h2 id="winnerText">PLAYER 1 WINS!</h2>
+                <button id="restartButton">FIGHT AGAIN</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div>
+                <h3>PLAYER 1</h3>
+                <p>A / D - Move</p>
+                <p>W - Jump</p>
+                <p>F - Punch</p>
+                <p>G - Kick</p>
+                <p>H - Special</p>
+            </div>
+
+            <div>
+                <h3>PLAYER 2</h3>
+                <p>← / → - Move</p>
+                <p>↑ - Jump</p>
+                <p>J - Punch</p>
+                <p>K - Kick</p>
+                <p>L - Special</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
